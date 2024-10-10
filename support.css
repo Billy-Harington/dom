@@ -1,0 +1,74 @@
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+   
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.menu p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.block {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #ededed;
+}
+
+.block p {
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0;
+}
+
+.more {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.more:hover {
+    text-decoration: underline;
+}
+
+.info {
+    max-height: 0;
+   visibility: hidden;
+   opacity: 0;
+    transition: max-height 0.4s ease;
+    font-size: 16px;
+    color: #666;
+    padding-top: 10px;
+}
+
+.block.active .info {
+    max-height: 150px;
+    padding-bottom: 10px;
+}
+
+.show{
+    visibility: visible;
+    opacity: 1;
+}
+
+.hide{
+    opacity: 0;
+    visibility: hidden;
+}
